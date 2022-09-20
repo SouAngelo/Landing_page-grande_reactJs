@@ -1,0 +1,80 @@
+@import 'mixins'
+
+%font-lato
+    font-family: lato
+
+%font-raleway
+    font-family: 'Raleway', sans-serif    
+
+.container-sobreOvendedor
+    @include flex(center, center, column) 
+    width: 100%
+    height: 100%
+    @extend %font-raleway
+    position: relative
+    
+.container-vendedor
+    width: 80%
+    height: 100%
+    @include flex(center, center, row)
+    margin-top: 150px
+    margin-bottom: 50px
+
+.content-vendedor
+    width: 70%
+    padding: 20px
+    padding-right: 50px
+    margin-bottom: 50px
+
+    & h2 
+        font-size: 20px
+        font-weight: 500
+        color: #5c5c5c
+
+    & h1 
+        font-size: 42px
+        color: #3e3e3e
+        
+      
+    & span 
+        color: #0f808c
+
+    & p 
+        font-size: 20px  
+        color: #5c5c5c
+        font-weight: 500
+
+.container-image-vendedor
+    width: 30%    
+
+.image-person
+    width: 300px
+    height: 300px
+    background: #0f808c
+    @include border
+    margin-bottom: 10px
+
+    & img 
+        width: 100%
+        height: 100%
+        border-bottom-left-radius: 30px
+        border-bottom-right-radius: 70px
+
+.copy-logo
+    width: 300px
+
+.btn-vendedor
+    @include flex(center, center, column)
+    width: 80%
+    height: 100%    
+    position: absolute
+    bottom: -425px
+
+    & a 
+        @include btn(#0f808c, #fff)
+        width: 70%
+        height: 60px
+        border-radius: 8px
+        @include flex(center, center, none)
+        font-size: 20px
+        margin-bottom: 25px

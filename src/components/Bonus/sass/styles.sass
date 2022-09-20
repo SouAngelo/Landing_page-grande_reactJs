@@ -1,0 +1,81 @@
+@import 'mixins'
+
+%font-raleway
+    font-family: 'Raleway', sans-serif
+
+
+.container-bonus
+    width: 100%
+    height: 100%
+    background: linear-gradient(rgba(0,0 ,0 , .8 ), rgba(0,0 ,0 , .8)) ,url('https://img.freepik.com/vetores-gratis/fundo-de-formas-abstratas-brancas_79603-1362.jpg?w=2000') no-repeat center center/cover
+    background-attachment: fixed
+    @include border
+    @include flex(center, center, column)
+    @extend  %font-raleway
+
+.sessao-bonus
+    width: 85%
+    height: 100%
+    @include flex(center, center, column)
+    padding-top: 100px
+
+
+.container-cards-bonus
+    width: 100%
+    padding-top: 20px
+    @include flex(center, center, column)
+
+.content-bonus
+    width: 70%
+    text-align: center
+
+    & h1 
+        font-size: 40px
+        color: #fff
+
+        & span
+            color: #0f808c
+
+    & p 
+        color: #ddd
+        font-size: 20px
+        font-weight: 500
+
+        & span 
+            color: #fff
+            font-weight: bold
+
+.card-bonus
+    @include flex(space-between, center, row)
+    width: 85%
+    margin-bottom: 100px
+
+    & img 
+        width: 350px
+        margin-right: 80px
+
+    & .card-img 
+        width: 500px   
+
+.card-text
+    width: 70%
+
+    & h2 
+        color: #00ffef
+        font-size: 50px
+
+    & h3 
+        color: #fff
+        font-size: 25px
+        font-weight: 500
+
+        & span
+            text-decoration: line-through
+            color: #ddd
+
+    & p 
+        font-size: 20px 
+        color: #ddd
+
+.h3
+    width: 40%

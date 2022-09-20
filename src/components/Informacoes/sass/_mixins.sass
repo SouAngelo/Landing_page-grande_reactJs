@@ -1,0 +1,23 @@
+@mixin flex($j, $a, $f)
+  display: flex
+  justify-content: $j
+  align-items: $a
+  flex-direction: $f
+
+@mixin btn($b, $c)
+   background-color: $b
+   border-radius: 5px
+   text-decoration: none 
+   width: 100%
+   text-align: center
+   border-radius: 25px
+   padding: 10px 20px
+   transition: .5s
+   color: $c
+
+   
+@mixin border()
+   border-top-left-radius: 70px
+   border-top-right-radius: 30px
+   border-bottom-left-radius: 30px
+   border-bottom-right-radius: 70px

@@ -1,0 +1,108 @@
+@import 'mixins'
+
+%font-raleway
+    font-family: 'Raleway', sans-serif
+
+
+.container-depoimentos
+    @include flex(center, center, none)
+    width: 100%
+    height: 100%
+    @extend  %font-raleway
+    background: #f6f6f6
+   
+.sessao-depoimentos
+    width: 80%
+    @include flex(center, center, column)
+    padding-top: 80px
+
+.content-depoimentos
+    width: 100%
+    text-align: center
+
+    & h1 
+        font-size: 40px
+        color: #535353
+
+        & span
+            color: #0f808c
+
+    & p 
+        font-size: 20px
+        color: #535353
+        margin-top: -15px
+
+.carousel-container
+    @include flex(center, none, none)
+    width: 100%
+    height: 65vh
+ 
+    
+
+.carousel
+    @include flex(none, none, row)
+    width: 70%
+    height: 400px
+    overflow-x: scroll
+    overflow-y: hidden
+    scroll-behavior: smooth
+
+.carousel::-webkit-scrollbar
+    display: none    
+
+.carousel-item
+    width: 32.5%
+    height: 100%
+    flex: none
+    margin-right: 10px
+    
+    & img
+        width: 100%
+        height: 100%
+        
+        
+
+.depoimento
+    width: 100%
+    height: 100%
+    @include flex(center, center, row)
+    margin-top: 100px
+    margin-bottom: 100px
+
+.content-depoimento
+    width: 50%
+    padding-right: 100px
+    text-align: center
+
+    & h1 
+        font-size: 40px
+        color: #535353
+
+        & span 
+            color: #0f808c
+    
+    & p 
+        font-size: 20px
+        color: #535353
+
+.img-depoimento
+    width: 25%
+
+    & img
+        width: 100%
+        border-radius: 25px
+
+.arrows
+    width: 80px
+    height: 100px
+    @include flex(space-around, center, column)
+
+    & i 
+        font-size: 20px
+        background: #0f808c
+        color: #fff
+        padding: 7px 10px
+        cursor: pointer
+
+        &:hover
+            background: #044e56

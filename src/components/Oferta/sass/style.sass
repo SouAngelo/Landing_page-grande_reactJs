@@ -1,0 +1,162 @@
+@import 'mixins'
+
+    
+%font-raleway
+    font-family: 'Raleway', sans-serif
+
+%font-lato
+    font-family: lato
+
+.container-oferta
+    @include flex(center, center, column)
+    width: 100%
+    height: 100%   
+    @extend %font-raleway
+
+.sessao-oferta
+    width: 100%
+    height: 100%
+    @include flex(center, center, column)
+    text-align: center
+    padding-top: 70px
+    
+.text-oferta
+    margin-bottom: 20px
+    width: 70%
+
+    & h1 
+        font-size: 42px
+        color: #4b4b4b
+
+        & span 
+            color:  #0f808c
+
+    & p 
+        font-size: 20px
+        color: #4b4b4b
+        font-weight: 500
+        margin-top: -25px
+
+.descontos
+    width: 100%
+    @include flex(center, center, column)
+    margin-top: -20px
+    margin-bottom: 100px
+
+.item-desconto
+    margin: 10px
+    border: 3px solid #0f808c
+    border-radius: 10px
+    padding: 0 25px
+    width: 60%
+
+    & h2 
+        font-size: 22px
+        color: #181f2e
+        
+        & span 
+            color: #0f808c
+
+        & label
+            color: green
+    
+.area-de-compra
+    width: 100%
+    height: 100%
+    @include flex(center, center, column)
+    text-align: center
+    background: #f6f6f6
+    margin-bottom: 50px
+
+.content-compra
+    margin-bottom: 50px
+    width: 40%
+
+    & h1 
+        font-size: 42px
+        color: #4b4b4b
+
+        & span 
+            color:  #0f808c
+
+    & p 
+        font-size: 20px
+        color: #6b6b6b
+        font-weight: 500
+        margin-top: -25px
+
+.card-compra
+    background: #fff 
+    border: 1px solid #54595f
+    border-radius: 40px       
+    position: relative
+    padding: 20px
+    padding-top: 50px
+    @extend %font-lato
+
+.card-compra-text
+    background: #54595f    
+    width: 500px
+    padding: 2px 15px
+    border-top-left-radius: 50px
+    border-bottom-right-radius: 50px
+    position: absolute
+    top: -40px
+    left: 90px
+    box-shadow: 2px 2px 5px #54595f
+
+    & h2 
+        color: #fff
+        font-size: 20px
+
+.content-card-compra
+    width: 100%
+    height: 100%
+    margin-bottom: 35px
+
+    & hr 
+        width: 70%
+
+    & p 
+        font-size: 20px
+        font-weight: 500
+        color: #54595f
+
+        & span 
+            color: #0f808c
+            font-weight: bold
+            text-decoration: line-through
+
+        & label
+            font-weight: bold
+            color: #000
+
+    & h2 
+        font-size: 5rem
+        font-weight: bold
+        margin: 0
+        color:  #0f808c
+
+    .a-vista
+        font-weight: bold
+
+    & a 
+        @include btn(#0f808c, #fff)
+
+        
+.img-card-compra
+    width: 60%
+    margin: 0 auto
+    @include flex(center, center, column)    
+
+    & p 
+        font-size: 16px   
+        font-weight: 500
+
+        & span
+            color: #0f808c
+            font-weight: bold
+
+    & img 
+        width: 100%
+        margin-bottom: 20px 
