@@ -24,7 +24,9 @@ export default function Oferta() {
           </div>
 
           <div className='card-compra'>
-            <div className='card-compra-text'><h2 style={{textTransform: 'uppercase'}}>Lorem ipsum dolor sit.</h2></div>
+            <div className='card-compra-text'>
+              <h2 style={{textTransform: 'uppercase'}}>Lorem ipsum dolor sit.</h2>
+            </div>
 
             <div className='content-card-compra'>
               <p>DE <span>R$ 911,00</span> POR APENAS <label>10x</label></p>

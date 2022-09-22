@@ -32,6 +32,8 @@
     & h1 
         font-size: 40px
         color: #fff
+        @media screen and(max-width: 600px)
+            font-size: 32px
 
         & span
             color: #0f808c
@@ -40,6 +42,8 @@
         color: #ddd
         font-size: 20px
         font-weight: 500
+        @media screen and(max-width: 600px)
+            font-size: 17px
 
         & span 
             color: #fff
@@ -49,25 +53,47 @@
     @include flex(space-between, center, row)
     width: 85%
     margin-bottom: 100px
+    @media screen and(max-width: 950px)
+        width: 97%
+    @media screen and(max-width: 800px)
+        @include flex(center, center, column)
 
     & img 
         width: 350px
         margin-right: 80px
+        @media screen and(max-width: 950px)
+            width: 250px
+        @media screen and(max-width: 800px)
+            margin-right: 0
 
     & .card-img 
-        width: 500px   
+        width: 500px
+        @media screen and(max-width: 950px)
+            width: 300px   
 
 .card-text
     width: 70%
+    @media screen and(max-width: 950px)
+        width: 90%
+    @media screen and(max-width: 800px)
+        @include flex(center, center, column)
+    @media screen and(max-width: 500px)
+        width: 100%
+        text-align: center
+        
 
     & h2 
         color: #00ffef
         font-size: 50px
+        @media screen and(max-width: 600px)
+            font-size: 40px
 
     & h3 
         color: #fff
         font-size: 25px
         font-weight: 500
+        @media screen and(max-width: 600px)
+            font-size: 20px
 
         & span
             text-decoration: line-through
@@ -78,4 +104,7 @@
         color: #ddd
 
 .h3
-    width: 40%
+    width: 45%
+    @media screen and(max-width: 800px)
+        width: 95%
+        text-align: center

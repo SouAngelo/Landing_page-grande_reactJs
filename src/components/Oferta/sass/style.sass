@@ -12,6 +12,7 @@
     width: 100%
     height: 100%   
     @extend %font-raleway
+    background: #f6f6f6
 
 .sessao-oferta
     width: 100%
@@ -27,6 +28,8 @@
     & h1 
         font-size: 42px
         color: #4b4b4b
+        @media screen and(max-width: 600px)
+            font-size: 32px
 
         & span 
             color:  #0f808c
@@ -36,6 +39,8 @@
         color: #4b4b4b
         font-weight: 500
         margin-top: -25px
+        @media screen and(max-width: 600px)
+            font-size: 17px
 
 .descontos
     width: 100%
@@ -53,6 +58,8 @@
     & h2 
         font-size: 22px
         color: #181f2e
+        @media screen and(max-width: 600px)
+            font-size: 19px
         
         & span 
             color: #0f808c
@@ -65,16 +72,21 @@
     height: 100%
     @include flex(center, center, column)
     text-align: center
-    background: #f6f6f6
+    
     margin-bottom: 50px
 
 .content-compra
     margin-bottom: 50px
     width: 40%
+    
+    @media screen and(max-width: 800px)
+        width: 80%
 
     & h1 
         font-size: 42px
         color: #4b4b4b
+        @media screen and(max-width: 600px)
+            font-size: 32px
 
         & span 
             color:  #0f808c
@@ -84,6 +96,8 @@
         color: #6b6b6b
         font-weight: 500
         margin-top: -25px
+        @media screen and(max-width: 600px)
+            font-size: 17px
 
 .card-compra
     background: #fff 
@@ -93,26 +107,33 @@
     padding: 20px
     padding-top: 50px
     @extend %font-lato
+    @media screen and(max-width: 775px)
+        width: 85%
 
 .card-compra-text
     background: #54595f    
-    width: 500px
+    width: 75%
     padding: 2px 15px
     border-top-left-radius: 50px
     border-bottom-right-radius: 50px
     position: absolute
-    top: -40px
-    left: 90px
+    top: 5px
+    left: 10%
     box-shadow: 2px 2px 5px #54595f
-
+    
     & h2 
         color: #fff
         font-size: 20px
+        @media screen and(max-width: 500px)
+            font-size: 17px
 
 .content-card-compra
     width: 100%
     height: 100%
+    padding-bottom: 40px
     margin-bottom: 35px
+    margin-top: 20px
+   
 
     & hr 
         width: 70%
@@ -136,17 +157,25 @@
         font-weight: bold
         margin: 0
         color:  #0f808c
+        @media screen and(max-width: 600px)
+            font-size: 4rem
+        @media screen and(max-width:500px)
+            font-size: 3rem
 
     .a-vista
         font-weight: bold
+        @media screen and(max-width:500px)
+            font-size: 15px
+            margin-bottom: 30px
 
     & a 
         @include btn(#0f808c, #fff)
-
+  
         
 .img-card-compra
     width: 60%
     margin: 0 auto
+    margin-top: -22px
     @include flex(center, center, column)    
 
     & p 

@@ -59,7 +59,7 @@ function Introducao() {
       </section>
 
       <section className='apresentacao'>
-          <div>
+          <div className='image-segura'>
               <img src="https://silvioroberto.com.br/wp-content/uploads/2021/09/hotmart-preto.png" alt="" />
           </div>
 

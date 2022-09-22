@@ -22,14 +22,16 @@ export default function SobreOvendedor() {
            </div>
            
            <img src="https://selectext.app/static/media/selectext-logo-filled-blue.4249e65a.png" alt="" className='copy-logo'/>
-         </div>
 
+           
+         </div>
          
        </section>
 
        <div className='btn-vendedor'>
-           <a href="#">QUERO APRENDER AGORA!</a>
-        </div>
+              <a href="#">QUERO APRENDER AGORA!</a>
+           </div>
+        
    </div>
  );
 }

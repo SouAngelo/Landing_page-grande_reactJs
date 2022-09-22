@@ -14,6 +14,9 @@
     width: 80%
     @include flex(center, center, column)
     padding-top: 80px
+    @media screen and(max-width: 870px)
+        width: 100%
+        padding-left: 20px
 
 .titulo-curso
     margin-bottom: 50px
@@ -36,6 +39,9 @@
 .container-images
     @include flex(space-around, center, row)
     flex-wrap: wrap
+    @media screen and(max-width: 870px)
+        width: 100%
+        
 
 .image
     width: 300px    
@@ -46,9 +52,22 @@
     background: #0f808c
     border-radius: 10px
     color: #fff
+    margin-right: 8px
+    @media screen and(max-width: 870px)
+        width: 250px
+        height: 250px
+    @media screen and(max-width: 595px)
+        width: 80%
+        margin-right: 20px
+        height: 300px
+        
 
     & h2 
         font-size: 30px
+        @media screen and(max-width: 870px)
+            font-size: 1.6rem
+        @media screen and(max-width: 595px)
+            font-size: 2rem
 
     & p 
         font-size: 18px
@@ -57,6 +76,8 @@
     @include flex(center, center, column)
     width: 80%
     height: 100%
+    @media screen and(max-width: 600px)
+        margin-right: 20px
     
     & a 
         @include btn(#2f2e32, #fff)
@@ -66,3 +87,10 @@
         @include flex(center, center, none)
         font-size: 20px
         margin-bottom: 25px
+        @media screen and(max-width: 910px)
+            min-width: 300px
+
+    & img 
+        width: 50%
+        height: 40px
+        min-width: 300px
