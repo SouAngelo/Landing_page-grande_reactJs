@@ -1,6 +1,6 @@
 ## 🔗 Sobre o Projeto
 
-Deploy:  [Clique aqui][(https://angelogustavo-portifolio.netlify.app/](https://landingpage-mkt.netlify.app))
+Deploy:  [Clique aqui](https://angelogustavo-portifolio.netlify.app/)
 
 <p>
 Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêriencias, conhecimentos e projetos. 
