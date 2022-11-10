@@ -3,7 +3,7 @@
 Deploy:  [Clique aqui](https://landingpage-mkt.netlify.app)
 
 <p>
-Esse é o meu portifólio, feito para mostrar um pouco sobre mim, minhas expêriencias, conhecimentos e projetos. 
+Essa é uma landing page de marketing digital.
 </p>
 
 
